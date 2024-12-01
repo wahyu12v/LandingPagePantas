@@ -7,77 +7,76 @@
   <title>Pantas - DLHK Provinsi Riau</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-
-  <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 
 <body class="index-page">
 
+  
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.png" alt="">
-      </a>
-
-      <nav id="navmenu" class="navmenu">
+  
+      <!-- Navbar for larger screens -->
+      <nav id="navmenu" class="navmenu  d-none d-lg-block">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+          <li><a href="#Bagaimana">How to Use</a></li>
+          <li><a href="#fitur">Features</a></li>
+          <li><a href="#detail">Detail</a></li>
+          <li><a href="#laporkan">Report</a></li>
+          <li><a href="#berita">News</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="https://dislhk.riau.go.id/kontak.php" target="_blank">Contact</a></li>
         </ul>
       </nav>
+  
+      <!-- Hamburger menu for smaller screens with green icon -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: black;" id="hamburgerButton">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color: green; font-size: 24px;"></i>
+        </span>
+      </button>
+  
+      <!-- Collapsible navbar for mobile -->
+      <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
+        <ul class="navbar-nav"  style="margin-left: 2vh;">
+          <li class="nav-item"><a href="#hero">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#Bagaimana">How to Use</a></li>
+          <li class="nav-item"><a href="#fitur">Features</a></li>
+          <li class="nav-item"><a href="#detail">Detail</a></li>
+          <li class="nav-item"><a href="#laporkan">Report</a></li>
+          <li class="nav-item"><a href="#berita">News</a></li>
+          <li class="nav-item"><a href="#faq">FAQ</a></li>
+          <li class="nav-item"><a href="https://dislhk.riau.go.id/kontak.php" target="_blank">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </header>
-
+  
   <main class="main">
 
-    <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos-delay="100">
 
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <div class="hero-content" data-aos-delay="200">
               <h1 class="mb-4">
                 Selamat Datang di<br>
                 <span class="accent-text">Sistem PANTAS <span style="color: black;">by</span> DLHK Riau</span>
@@ -102,7 +101,7 @@
           </div>
         </div>
 
-        <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+        <div class="row stats-row gy-4 mt-5" data-aos-delay="500">
           <div class="col-lg-3 col-md-6">
             <div class="stat-item">
               <div class="stat-icon">
@@ -152,12 +151,11 @@
 
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
 
-    <!-- About Section -->
     <section id="about" class="about section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos-delay="100">
 
         <div class="row gy-4 align-items-center justify-content-between">
 
@@ -205,11 +203,9 @@
 
       </div>
 
-    </section><!-- /About Section -->
+    </section>
 
-
-    <!-- Bagaimana Menggunakan Section -->
-    <section id="features" class="features section">
+    <section id="Bagaimana" class="features section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -313,10 +309,9 @@
 
       </div>
 
-    </section><!-- /how Section -->
+    </section>
 
-    <!-- Features Cards Section -->
-    <section id="features-cards" class="features-cards section">
+    <section id="fitur" class="features-cards section">
 
       <div class="container">
 
@@ -362,10 +357,9 @@
 
       </div>
 
-    </section><!-- /Features Cards Section -->
+    </section>
 
-    <!-- Features 2 Section -->
-    <section id="features-2" class="features-2 section">
+    <section id="fitur2" class="features-2 section">
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -413,7 +407,7 @@
 
             <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="phone-mockup text-center">
-                <img src="assets/img/phone-app-screen.webp" alt="Phone Mockup" class="img-fluid">
+                <img src="assets/img/hp.png" alt="Phone Mockup" class="img-fluid">
               </div>
             </div><!-- End Phone Mockup -->
 
@@ -460,10 +454,8 @@
 
         </div>
 
-    </section><!-- /Features 2 Section -->
+    </section>
 
-
-    <!-- Clients Section -->
     <section id="clients" class="clients section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -517,599 +509,384 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section>
+
+    <section id="detail" class="section light-background">
+        <div class="container section-title">
+            <h2 class="section__header">Detail Data Daerah Laporan</h2>
+            <p class="section__description">
+                Berikut adalah data laporan tumpukan sampah berdasarkan daerah pelapor. Tabel ini menampilkan jumlah laporan
+                yang diterima untuk beberapa wilayah.
+            </p>
+        </div>
+    
+        <div class="container" style="margin-top: -2vh;">
+            <!-- Wrapper table dengan class table-responsive -->
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped" style="border: 1px solid #e3e3e3;">
+                    <thead class="thead-light" style="background-color: #9ff0b2; color: #333;">
+                        <tr style="text-align: center; font-weight: bold; font-size: 16px;">
+                            <th style="width: 25%;" class="bg-primary text-white">Wilayah</th>
+                            <th class="bg-success text-white">Laporan Biasa</th>
+                            <th class="bg-warning text-white">Laporan Sedang</th>
+                            <th class="bg-danger text-white">Laporan Parah</th>
+                            <th class="bg-dark text-white">Jumlah Laporan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- @foreach ($data as $d) -->
+                        <tr style="text-align: center; font-size: 14px;">
+                            <td style="text-align: left;">{{ $d['wilayah'] }}</td>
+                            <td>{{ $d['laporan_biasa'] }}</td>
+                            <td>{{ $d['laporan_sedang'] }}</td>
+                            <td>{{ $d['laporan_parah'] }}</td>
+                            <td>{{ $d['jumlah_laporan'] }}</td>
+                        </tr>
+                        <!-- @endforeach -->
+                    </tbody>
+                </table>
+            </div>
+    
+            <!-- Tombol Selengkapnya -->
+            <div class="text-center mt-4">
+                <a href="data.html" class="btn btn-success px-4 py-2" style="border-radius: 5px; font-size: 16px;">
+                    Selengkapnya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="laporkan" class="contact section ">
+        <!-- Section Title -->
+        <div class="container section-title">
+            <h2>Ayo Laporkan Tumpukan Sampah di sekitar Anda</h2>
+            <p>Silahkan isi form laporan berikut ini dengan tepat dan apa Adanya.Kontribusi anda sangat berarti bagi kita semua demi menciptakan lingkungan yang bersih bebas sampah.</p>
+        </div><!-- End Section Title -->
+    
+        <div class="container" data-aos-delay="100">
+            <div class="row g-4 g-lg-5">
+                <!-- Map Section -->
+                <div class="col-lg-6">
+                    <div id="map" style="width: 100%; min-height: 80vh; border-radius: 10px;"></div>
+                </div>
+    
+                <!-- Form Section -->
+                <div class="col-lg-6">
+                    <div class="contact-form" data-aos-delay="300">
+
+                        <form action="{{ route('lapor') }}" method="POST" enctype="multipart/form-data" class="php-email-form">
+                            <input type="hidden" name="koordinat" id="koordinat">
+    
+                            <div class="form-group mb-3">
+                                <label for="form-name" class="form-label fw-bold">Nama:</label>
+                                <input type="text" class="form-control" id="form-name" name="name" required>
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label for="form-wa" class="form-label fw-bold">WhatsApp:</label>
+                                <input type="number" class="form-control" id="wa" name="wa" onkeyup="validateWA()" required>
+                                <label id="wa-error" class="text-info mt-1" style="display: none"></label>
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label for="form-kategori" class="form-label fw-bold">Kategori Tumpukan:</label>
+                                <select class="form-control" id="form-kategori" name="kategori" required>
+                                    <option value="" hidden>Pilih kategori</option>
+                                    <option value="Ringan">Ringan</option>
+                                    <option value="Sedang">Sedang</option>
+                                    <option value="Berat">Berat</option>
+                                </select>
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label for="form-deskripsi" class="form-label fw-bold">Deskripsi:</label>
+                                <textarea class="form-control" id="form-deskripsi" name="deskripsi" rows="4" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="form-foto" class="form-label">Foto:</label>
+                              <input class="form-control" type="file" id="form-foto" name="foto" accept="image/*" required>
+                            </div>
+    
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary px-5 py-2" style="border-radius: 10px;">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+          <!-- Leaflet.js Library -->
+          <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+          <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+          
+          <script>
+              // Initialize the map
+              var map = L.map('map').setView([-6.1754, 106.8272], 13); // Center the map to Jakarta (Example)
+          
+              // Add OpenStreetMap tiles
+              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 18,
+                  attribution: '© OpenStreetMap contributors'
+              }).addTo(map);
+          
+              // Add marker
+              var marker = L.marker([-6.1754, 106.8272]).addTo(map);
+          
+              // Update hidden input when the map is clicked
+              map.on('click', function (e) {
+                  var latlng = e.latlng;
+                  marker.setLatLng(latlng); // Move marker to new location
+                  document.getElementById('koordinat').value = latlng.lat + ',' + latlng.lng; // Update hidden input
+              });
+          </script>
+          
 
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+          
+    </section>
+    
+    <section id="berita" class="berita section light-background">
+      <div class="container section-title">
+          <h2>Berita Sampah Liar di Provinsi Riau</h2>
+          <p>Berikut adalah beberapa berita terkini mengenai masalah tumpukan sampah liar di Provinsi Riau.</p>
+      </div>
 
       <div class="container">
+          <div class="row g-4">
 
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-          <!-- Section Title -->
-          <div class="container section-title" data-aos="fade-up">
-            <h2>Form Laporan</h2>
-            <p>Silahkan isi form laporan berikut ini dengan tepat dan apa Adanya.Kontribusi anda sangat berarti bagi kita semua demi menciptakan lingkungan yang bersih bebas sampah.</p>
-          </div><!-- End Section Title -->
-    
-          <div class="container" data-aos="fade-up" data-aos-delay="50">
-    
-            <div class="row g-4 g-lg-5">
-              <div class="col-lg-5">
-                <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-                  <h3>Contact Info</h3>
-                  <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-    
-                  <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-box">
-                      <i class="bi bi-geo-alt"></i>
-                    </div>
-                    <div class="content">
-                      <h4>Our Location</h4>
-                      <p>A108 Adam Street</p>
-                      <p>New York, NY 535022</p>
-                    </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="https://awsimages.detik.net.id/community/media/visual/2024/01/03/tumpukan-sampah-di-pinggir-jalan-di-pekanbaru-raja-adil-siregardetiksumut_169.jpeg?w=700&q=90" class="card-img-top" alt="Tumpukan Sampah di Pekanbaru yang Mengganggu Pejalan Kaki">
+                      <div class="card-body">
+                          <h5 class="card-title">Tumpukan Sampah di Pekanbaru yang Mengganggu Pejalan Kaki</h5>
+                          <p class="card-text">
+                              Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru menjelaskan penyebab tumpukan sampah yang tak diangkut adalah aksi demo karyawan di tempat pembuangan akhir (TPA)...
+                          </p>
+                          <a href="https://www.detik.com/sumut/berita/d-7125443/ternyata-ini-penyebab-tumpukan-sampah-di-pekanbaru-tak-diangkut" class="btn btn-success" target="_blank">Selengkapnya</a>
+                      </div>
                   </div>
-    
-                  <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-box">
-                      <i class="bi bi-telephone"></i>
-                    </div>
-                    <div class="content">
-                      <h4>Phone Number</h4>
-                      <p>+1 5589 55488 55</p>
-                      <p>+1 6678 254445 41</p>
-                    </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="https://www.cakaplah.com/assets/news/04102019/cakaplah_m9zqq_43980.jpg" class="card-img-top" alt="Produksi Sampah Warga Pekanbaru Tembus 1.000 Ton Perhari">
+                      <div class="card-body">
+                          <h5 class="card-title">Produksi Sampah Warga Pekanbaru Tembus 1.000 Ton Perhari</h5>
+                          <p class="card-text">
+                            Produksi sampah di Kota Pekanbaru setiap hari mencapai 1.000 ton. 800 ton diantaranya dibuang langsung ke Tempat Pembuangan Akhir (TPA) Muara Fajar.Sekretaris Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru..
+                          </p>
+                          <a href="https://www.cakaplah.com/berita/baca/43980/2019/10/04/produksi-sampah-warga-pekanbaru-tembus-1000-ton-perhari#sthash.YLKaCrQ6.dpbs" class="btn btn-success" target="_blank">Selengkapnya</a>
+                      </div>
                   </div>
-    
-                  <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="icon-box">
-                      <i class="bi bi-envelope"></i>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="https://asset-2.tstatic.net/tribunnews/foto/bank/images/LH123.jpg" class="card-img-top" alt="Kunker ke Riau, Menteri Hanif Faisol Tutup TPA Liar di Kampar">
+                    <div class="card-body">
+                        <h5 class="card-title">Kunker ke Riau, Menteri Hanif Faisol Tutup TPA Liar di Kampar</h5>
+                        <p class="card-text">
+                          Pada hari pertama kunjungannya di Buni Sarimadu, Hanif Faisol bersama jajaran menutup Tempat Pemrosesan Akhir (TPA) liar. Langkah ini diambil untuk memastikan pengelolaan sampah yang lebih baik.
+                        </p>
+                        <a href="https://www.liputan6.com/news/read/5802367/kunker-ke-riau-menteri-hanif-faisol-tutup-tpa-liar-di-kampar" class="btn btn-success" target="_blank">Selengkapnya</a>
                     </div>
-                    <div class="content">
-                      <h4>Email Address</h4>
-                      <p>info@example.com</p>
-                      <p>contact@example.com</p>
-                    </div>
-                  </div>
                 </div>
               </div>
-    
-              <div class="col-lg-7">
-                <div class="contact-form" data-aos="fade-up" data-aos-delay="50">
-                    <form action="{{ route('lapor') }}" method="POST" enctype="multipart/form-data"
-                    class="d-flex flex-column justify-content-between">
-                    <input type="hidden" name="koordinat" id="koordinat">
+      
 
-                    <div class="form-group mb-3">
-                        <label for="form-name" class="form-label fw-bold">Nama:</label>
-                        <input type="text" class="form-control" id="form-name" name="name" required>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="form-wa" class="form-label fw-bold">WhatsApp:</label>
-                        <input type="number" class="form-control" id="wa" name="wa"
-                            onkeyup="validateWA()" required>
-                        <label id="wa-error" class="text-info mt-1" style="display: none"></label>
-                    </div>
-
-
-                    <div class="form-group mb-3">
-                        <label for="form-kategori" class="form-label fw-bold">Kategori Tumpukan:</label>
-                        <select class="form-control" id="form-kategori" name="kategori" required>
-                            <option value="" hidden>Pilih kategori</option>
-                            <option value="Ringan">Ringan</option>
-                            <option value="Sedang">Sedang</option>
-                            <option value="Berat">Berat</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="form-deskripsi" class="form-label fw-bold">Deskripsi:</label>
-                        <textarea class="form-control" id="form-deskripsi" name="deskripsi" rows="4" required></textarea>
-                    </div>
-
-                    <div class="form-group mb-3">
-                        <label for="form-foto" class="form-label fw-bold">Foto:</label>
-                        <input type="file" class="form-control-file" id="form-foto" name="foto"
-                            accept="image/*" required>
-                    </div>
-
-                    <div class="text-center">
-                        <button type="button" class="btn btn-primary  px-5 py-2"
-                            style=" border-radius: 10px;">Submit</button>
-                    </div>
-                    </form>
-                </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="https://www.batamnews.co.id/foto_berita/2023/11/2023-11-19-tumpukan-sampah-menumpuk-di-kota-pekanbaru-ini-respon-dlhk.jpg" class="card-img-top" alt="Tumpukan Sampah Muncul di Pekanbaru Akibat Lambat Diangkut">
+                      <div class="card-body">
+                          <h5 class="card-title">Tumpukan Sampah Muncul di Pekanbaru Akibat Lambat Diangkut</h5>
+                          <p class="card-text">
+                              Tumpukan sampah di Pekanbaru terus menjadi masalah, terutama di Jalan Rajawali dan Jalan SM Amin. Warga mengeluhkan lambatnya pengangkutan sampah yang menyebabkan pemandangan buruk...
+                          </p>
+                          <a href="https://www.detik.com/sumut/berita/d-6447366/tumpukan-sampah-muncul-di-pekanbaru-akibat-lambat-diangkut" class="btn btn-success" target="_blank">Selengkapnya</a>
+                      </div>
+                  </div>
               </div>
+
     
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/225/2024/01/04/17-sampah-jalan-634933496.jpg" class="card-img-top" alt="Sampah Nyaris Tutupi Badan Jalan di Pekanbaru">
+                      <div class="card-body">
+                          <h5 class="card-title">Sampah Nyaris Tutupi Badan Jalan di Pekanbaru</h5>
+                          <p class="card-text">
+                              Kota Pekanbaru menghadapi masalah tumpukan sampah yang semakin parah di awal tahun 2024. Salah satu lokasi yang paling terdampak adalah Jalan Agus Salim, di mana tumpukan sampah mencapai 25 meter...
+                          </p>
+                          <a href="https://riaupos.jawapos.com/riau/2253695528/sampah-nyaris-tutupi-badan-jalan" class="btn btn-success" target="_blank">Selengkapnya</a>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.pekanbaru.go.id/berkas_file/news/10092024/79917-news-dlhk-pekanbaru-ingat.jpg" class="card-img-top" alt="Sampah Nyaris Tutupi Badan Jalan di Pekanbaru">
+                    <div class="card-body">
+                        <h5 class="card-title">DLHK Pekanbaru Ingatkan Warga Buang Sampah Sesuai Jadwal</h5>
+                        <p class="card-text">
+                            Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru imbau warga Kota Pekanbaru jangan sampai membuang sampah sembarangan. Mereka harus membuang sampah sesuai jadwal yang ada.
+                        </p>
+                        <a href="https://www.pekanbaru.go.id/p/news/dlhk-pekanbaru-ingatkan-warga-buang-sampah-sesuai-jadwal" class="btn btn-success" target="_blank">Selengkapnya</a>
+                    </div>
+                </div>
             </div>
-    
+
+
+
+          <!-- Tombol Berita Lainnya -->
+          <div class="row mt-5">
+              <div class="col-12 text-center">
+                  <a href="berita.html" class="btn btn-success">Berita Lainnya</a>
+              </div>
           </div>
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
       </div>
 
-    </section><!-- /Stats Section -->
+      <style>
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-height: 45vh;
+              }
 
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
+              .card-img-top {
+                  object-fit: cover;
+                  height: 20vh;
+              }
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+              .card-body {
+                  padding: 20px;
+              }
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+              .card-title {
+                  font-size: 18px;
+                  font-weight: bold;
+              }
 
-        <div class="row g-4">
+              .card-text {
+                  font-size: 14px;
+                  color: #555;
+        }
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-activity"></i>
-              </div>
-              <div>
-                <h3>Nesciunt Mete</h3>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
+      </style>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-diagram-3"></i>
-              </div>
-              <div>
-                <h3>Eosle Commodi</h3>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
+    </section>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-easel"></i>
-              </div>
-              <div>
-                <h3>Ledo Markt</h3>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-clipboard-data"></i>
-              </div>
-              <div>
-                <h3>Asperiores Commodit</h3>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-
-    <!-- Faq Section -->
-    <section class="faq-9 faq section light-background" id="faq">
+    <section class="faq-9 faq section " id="faq">
 
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-5" data-aos="fade-up">
-            <h2 class="faq-title">Have a question? Check out the FAQ</h2>
-            <p class="faq-description">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
-            <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
-              <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
-              </svg>
+          <div class="col-lg-5">
+            <h2 class="faq-title">Punya Pertanyaan? Cek FAQ</h2>
+            <p class="faq-description">Berikut adalah beberapa pertanyaan yang sering diajukan terkait sistem PANTAS.</p>
+            <div class="faq-arrow d-none d-lg-block" data-aos-delay="200">
+              <img src="assets/img/tanya.jpg" alt="arrow icon" width="400" height="396">
             </div>
           </div>
 
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-7" data-aos-delay="300">
             <div class="faq-container">
 
-              <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+              <!-- FAQ Item 1 -->
+              <div class="faq-item" style="background-color: #F4F6FF;">
+                <h3>Bagaimana cara mengakses sistem PANTAS?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>Pengguna dapat mengakses sistem PANTAS melalui web browser di perangkat apapun. Tidak diperlukan registrasi untuk mulai melaporkan sampah.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+              <!-- FAQ Item 2 -->
+              <div class="faq-item" style="background-color: #F4F6FF;">
+                <h3>Apakah saya perlu mendaftar untuk menggunakan sistem PANTAS?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Untuk melaporkan sampah, Anda tidak perlu melakukan registrasi. Cukup buka sistem di web browser dan mulai melaporkan dengan GPS dan foto sampah.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+              <!-- FAQ Item 3 -->
+              <div class="faq-item" style="background-color: #F4F6FF;">
+                <h3>Bagaimana cara melaporkan sampah dengan sistem PANTAS?</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Setelah mengakses sistem, aktifkan lokasi perangkat Anda, isi form laporan dengan memilih jenis sampah, tingkat keparahan, serta mengunggah foto sampah, lalu kirimkan laporan.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+              <!-- FAQ Item 4 -->
+              <div class="faq-item" style="background-color: #F4F6FF;">
+                <h3>Bagaimana sistem menentukan lokasi sampah?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Sistem menggunakan GPS di perangkat Anda untuk menentukan lokasi secara otomatis dan menandainya pada peta sebagai titik laporan sampah.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+              <!-- FAQ Item 5 -->
+              <div class="faq-item" style="background-color: #F4F6FF;">
+                <h3>Apakah laporan saya akan diproses dengan cepat?</h3>
                 <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                  <p>Ya, laporan yang masuk akan segera diteruskan ke pihak yang berwenang seperti DLHK Riau untuk penanganan lebih lanjut, memastikan respons cepat terhadap sampah liar.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+              <!-- FAQ Item 6 -->
+              <div class="faq-item" style="background-color: #F4F6FF;">
+                <h3>Apakah saya bisa melaporkan sampah di lokasi yang tidak terlihat?</h3>
                 <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                  <p>Anda bisa melaporkan sampah di lokasi mana saja menggunakan GPS di perangkat Anda, selama lokasi tersebut dapat dijangkau oleh ponsel dan sinyal GPS tersedia.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
+
+              <!-- FAQ Item 7 -->
+              <div class="faq-item" style="background-color: #F4F6FF;">
+                <h3>Bagaimana cara saya mengetahui status laporan saya?</h3>
+                <div class="faq-content">
+                  <p>Setelah mengirimkan laporan, Anda dapat mengisi nomor Whatsapp untuk mendapatkan informasi status laporan melalui pesan langsung.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
 
             </div>
           </div>
 
         </div>
       </div>
-    </section><!-- /Faq Section -->
-
-    <!-- Call To Action 2 Section -->
-    <section id="call-to-action-2" class="call-to-action-2 section dark-background">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action 2 Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                <div class="row gy-4">
-
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-
-                </div>
-              </form>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">iLanding</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
+  <footer id="footer" class="footer light-background">
+    <!-- Copyright Section -->
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">iLanding</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+      <div class="footer-contact pt-3">
+        <h4 style="margin-bottom: -1vh;">Dinas Lingkunagn Hidup dan Kehutanan Provinsi Riau</h4>
+        <p>GC7W+3W5, JL. Jend. Sudirman, No. 468, Pekanbaru, 28126, Jadirejo, Sukajadi, Pekanbaru City, Riau 28121</p>
+        <p><strong>Phone:</strong> <span>(0761) 21440</span></p>
+        <p><strong>Hours:</strong> <span>Closed ⋅ Opens Monday at 07:30</span></p>
+        <p><strong>Province:</strong> <span>Riau</span></p>
       </div>
+      <p>© <strong class="px-1 sitename">DLHK Provinsi Riau</strong> All Rights Reserved</p>
     </div>
-
   </footer>
+  
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
