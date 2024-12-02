@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,12 +26,14 @@
 
 <body class="index-page">
 
-  
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-  
-      <!-- Navbar for larger screens -->
-      <nav id="navmenu" class="navmenu  d-none d-lg-block">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -40,34 +43,15 @@
           <li><a href="#laporkan">Report</a></li>
           <li><a href="#berita">News</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="https://dislhk.riau.go.id/kontak.php" target="_blank">Contact</a></li>
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-  
-      <!-- Hamburger menu for smaller screens with green icon -->
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: black;" id="hamburgerButton">
-        <span class="navbar-toggler-icon">
-          <i class="fas fa-bars" style="color: green; font-size: 24px;"></i>
-        </span>
-      </button>
-  
-      <!-- Collapsible navbar for mobile -->
-      <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
-        <ul class="navbar-nav"  style="margin-left: 2vh;">
-          <li class="nav-item"><a href="#hero">Home</a></li>
-          <li class="nav-item"><a href="#about">About</a></li>
-          <li class="nav-item"><a href="#Bagaimana">How to Use</a></li>
-          <li class="nav-item"><a href="#fitur">Features</a></li>
-          <li class="nav-item"><a href="#detail">Detail</a></li>
-          <li class="nav-item"><a href="#laporkan">Report</a></li>
-          <li class="nav-item"><a href="#berita">News</a></li>
-          <li class="nav-item"><a href="#faq">FAQ</a></li>
-          <li class="nav-item"><a href="https://dislhk.riau.go.id/kontak.php" target="_blank">Contact</a></li>
-        </ul>
-      </div>
+
+      <a class="btn-getstarted" href="https://dislhk.riau.go.id/kontak.php">Contact</a>
+
     </div>
   </header>
-  
+
   <main class="main">
 
     <section id="hero" class="hero section">
@@ -205,6 +189,7 @@
 
     </section>
 
+
     <section id="Bagaimana" class="features section">
 
       <!-- Section Title -->
@@ -221,21 +206,21 @@
             <!-- Tab 1: Akses Web PANTAS -->
             <li class="nav-item">
               <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                <h4>Akses Web PANTAS</h4>
+                <h4 style="text-decoration: none;">Akses Web PANTAS</h4>
               </a>
             </li><!-- End tab nav item -->
         
             <!-- Tab 2: Aktifkan Lokasi -->
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                <h4>Aktifkan Lokasi</h4>
+                <h4 style="text-decoration: none;">Aktifkan Lokasi</h4>
               </a><!-- End tab nav item -->
             </li>
         
             <!-- Tab 3: Isi form Laporan -->
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-                <h4>Isi form Laporan</h4>
+                <h4 style="text-decoration: none;">Isi form Laporan</h4>
               </a>
             </li><!-- End tab nav item -->
           </ul>
@@ -311,6 +296,7 @@
 
     </section>
 
+
     <section id="fitur" class="features-cards section">
 
       <div class="container">
@@ -361,98 +347,98 @@
 
     <section id="fitur2" class="features-2 section">
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="row align-items-center">
+        <div class="row align-items-center">
 
-            <div class="col-lg-4">
+          <div class="col-lg-4">
 
-              <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
-                <div class="d-flex align-items-center justify-content-end gap-4">
-                  <div class="feature-content">
-                    <h3>Akses Mudah</h3>
-                    <p>Sistem PANTAS dirancang untuk dapat diakses melalui perangkat apapun dengan antarmuka yang sederhana dan intuitif.</p>
-                  </div>
-                  <div class="feature-icon flex-shrink-0">
-                    <i class="bi bi-box-arrow-in-right"></i>
-                  </div>
+            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Akses Mudah</h3>
+                  <p>Sistem PANTAS dirancang untuk dapat diakses melalui perangkat apapun dengan antarmuka yang sederhana dan intuitif.</p>
                 </div>
-              </div><!-- End .feature-item -->
-
-              <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
-                <div class="d-flex align-items-center justify-content-end gap-4">
-                  <div class="feature-content">
-                    <h3>Deteksi Lokasi</h3>
-                    <p>Dengan fitur GPS, pengguna dapat memastikan lokasi laporan yang akurat untuk penanganan yang lebih tepat sasaran.</p>
-                  </div>
-                  <div class="feature-icon flex-shrink-0">
-                    <i class="bi bi-geo-alt-fill"></i>
-                  </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-box-arrow-in-right"></i>
                 </div>
-              </div><!-- End .feature-item -->
-
-              <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
-                <div class="d-flex align-items-center justify-content-end gap-4">
-                  <div class="feature-content">
-                    <h3>Unggah Bukti</h3>
-                    <p>Pengguna dapat menyertakan foto untuk memberikan informasi tambahan yang mendukung proses penanganan laporan.</p>
-                  </div>
-                  <div class="feature-icon flex-shrink-0">
-                    <i class="bi bi-cloud-upload"></i>
-                  </div>
-                </div>
-              </div><!-- End .feature-item -->
-
-            </div>
-
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-              <div class="phone-mockup text-center">
-                <img src="assets/img/hp.png" alt="Phone Mockup" class="img-fluid">
               </div>
-            </div><!-- End Phone Mockup -->
+            </div><!-- End .feature-item -->
 
-            <div class="col-lg-4">
-
-              <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
-                <div class="d-flex align-items-center gap-4">
-                  <div class="feature-icon flex-shrink-0">
-                    <i class="bi bi-lock"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h3>Privasi Terjamin</h3>
-                    <p>Data pribadi pengguna tidak disimpan di sistem, sehingga keamanan dan privasi tetap terlindungi.</p>
-                  </div>
+            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Deteksi Lokasi</h3>
+                  <p>Dengan fitur GPS, pengguna dapat memastikan lokasi laporan yang akurat untuk penanganan yang lebih tepat sasaran.</p>
                 </div>
-              </div><!-- End .feature-item -->
-
-              <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
-                <div class="d-flex align-items-center gap-4">
-                  <div class="feature-icon flex-shrink-0">
-                    <i class="bi bi-hand-thumbs-up"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h3>Kolaborasi Efektif</h3>
-                    <p>Proses laporan dikelola langsung oleh DLHK Riau untuk memastikan setiap kasus ditangani dengan baik.</p>
-                  </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-geo-alt-fill"></i>
                 </div>
-              </div><!-- End .feature-item -->
+              </div>
+            </div><!-- End .feature-item -->
 
-              <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
-                <div class="d-flex align-items-center gap-4">
-                  <div class="feature-icon flex-shrink-0">
-                    <i class="bi bi-check-circle"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h3>Status Laporan</h3>
-                    <p>Memungkinkan pengguna memantau progres laporan mereka dengan transparansi penuh.</p>
-                  </div>
+            <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Unggah Bukti</h3>
+                  <p>Pengguna dapat menyertakan foto untuk memberikan informasi tambahan yang mendukung proses penanganan laporan.</p>
                 </div>
-              </div><!-- End .feature-item -->
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-cloud-upload"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
 
-            </div>
           </div>
 
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="phone-mockup text-center">
+              <img src="assets/img/hp.png" alt="Phone Mockup" class="img-fluid">
+            </div>
+          </div><!-- End Phone Mockup -->
+
+          <div class="col-lg-4">
+
+            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="d-flex align-items-center gap-4">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-lock"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Privasi Terjamin</h3>
+                  <p>Data pribadi pengguna tidak disimpan di sistem, sehingga keamanan dan privasi tetap terlindungi.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
+              <div class="d-flex align-items-center gap-4">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Kolaborasi Efektif</h3>
+                  <p>Proses laporan dikelola langsung oleh DLHK Riau untuk memastikan setiap kasus ditangani dengan baik.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
+              <div class="d-flex align-items-center gap-4">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-check-circle"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Status Laporan</h3>
+                  <p>Memungkinkan pengguna memantau progres laporan mereka dengan transparansi penuh.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+          </div>
         </div>
+
+      </div>
 
     </section>
 
@@ -511,7 +497,7 @@
 
     </section>
 
-    <section id="detail" class="section light-background">
+    <section id="detail" class="section light-background" data-aos-delay="100">
         <div class="container section-title">
             <h2 class="section__header">Detail Data Daerah Laporan</h2>
             <p class="section__description">
@@ -520,7 +506,7 @@
             </p>
         </div>
     
-        <div class="container" style="margin-top: -2vh;">
+        <div class="container" style="margin-top: -2vh;" data-aos-delay="100">
             <!-- Wrapper table dengan class table-responsive -->
             <div class="table-responsive">
                 <table class="table table-bordered table-hover table-striped" style="border: 1px solid #e3e3e3;">
@@ -572,23 +558,23 @@
     
                 <!-- Form Section -->
                 <div class="col-lg-6">
-                    <div class="contact-form" data-aos-delay="300">
+                    <div class="contact-form" data-aos-delay="100" data-aos-delay="300">
 
                         <form action="{{ route('lapor') }}" method="POST" enctype="multipart/form-data" class="php-email-form">
                             <input type="hidden" name="koordinat" id="koordinat">
     
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-3" data-aos-delay="100">
                                 <label for="form-name" class="form-label fw-bold">Nama:</label>
                                 <input type="text" class="form-control" id="form-name" name="name" required>
                             </div>
     
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-3" data-aos-delay="100">
                                 <label for="form-wa" class="form-label fw-bold">WhatsApp:</label>
                                 <input type="number" class="form-control" id="wa" name="wa" onkeyup="validateWA()" required>
                                 <label id="wa-error" class="text-info mt-1" style="display: none"></label>
                             </div>
     
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-3" data-aos-delay="100">
                                 <label for="form-kategori" class="form-label fw-bold">Kategori Tumpukan:</label>
                                 <select class="form-control" id="form-kategori" name="kategori" required>
                                     <option value="" hidden>Pilih kategori</option>
@@ -598,7 +584,7 @@
                                 </select>
                             </div>
     
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-3" data-aos-delay="100">
                                 <label for="form-deskripsi" class="form-label fw-bold">Deskripsi:</label>
                                 <textarea class="form-control" id="form-deskripsi" name="deskripsi" rows="4" required></textarea>
                             </div>
@@ -646,222 +632,223 @@
 
           
     </section>
-    
-    <section id="berita" class="berita section light-background">
-      <div class="container section-title">
-          <h2>Berita Sampah Liar di Provinsi Riau</h2>
-          <p>Berikut adalah beberapa berita terkini mengenai masalah tumpukan sampah liar di Provinsi Riau.</p>
-      </div>
 
-      <div class="container">
-          <div class="row g-4">
-
-              <div class="col-md-4">
-                  <div class="card">
-                      <img src="https://awsimages.detik.net.id/community/media/visual/2024/01/03/tumpukan-sampah-di-pinggir-jalan-di-pekanbaru-raja-adil-siregardetiksumut_169.jpeg?w=700&q=90" class="card-img-top" alt="Tumpukan Sampah di Pekanbaru yang Mengganggu Pejalan Kaki">
-                      <div class="card-body">
-                          <h5 class="card-title">Tumpukan Sampah di Pekanbaru yang Mengganggu Pejalan Kaki</h5>
-                          <p class="card-text">
-                              Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru menjelaskan penyebab tumpukan sampah yang tak diangkut adalah aksi demo karyawan di tempat pembuangan akhir (TPA)...
-                          </p>
-                          <a href="https://www.detik.com/sumut/berita/d-7125443/ternyata-ini-penyebab-tumpukan-sampah-di-pekanbaru-tak-diangkut" class="btn btn-success" target="_blank">Selengkapnya</a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-4">
-                  <div class="card">
-                      <img src="https://www.cakaplah.com/assets/news/04102019/cakaplah_m9zqq_43980.jpg" class="card-img-top" alt="Produksi Sampah Warga Pekanbaru Tembus 1.000 Ton Perhari">
-                      <div class="card-body">
-                          <h5 class="card-title">Produksi Sampah Warga Pekanbaru Tembus 1.000 Ton Perhari</h5>
-                          <p class="card-text">
-                            Produksi sampah di Kota Pekanbaru setiap hari mencapai 1.000 ton. 800 ton diantaranya dibuang langsung ke Tempat Pembuangan Akhir (TPA) Muara Fajar.Sekretaris Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru..
-                          </p>
-                          <a href="https://www.cakaplah.com/berita/baca/43980/2019/10/04/produksi-sampah-warga-pekanbaru-tembus-1000-ton-perhari#sthash.YLKaCrQ6.dpbs" class="btn btn-success" target="_blank">Selengkapnya</a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card">
-                    <img src="https://asset-2.tstatic.net/tribunnews/foto/bank/images/LH123.jpg" class="card-img-top" alt="Kunker ke Riau, Menteri Hanif Faisol Tutup TPA Liar di Kampar">
-                    <div class="card-body">
-                        <h5 class="card-title">Kunker ke Riau, Menteri Hanif Faisol Tutup TPA Liar di Kampar</h5>
-                        <p class="card-text">
-                          Pada hari pertama kunjungannya di Buni Sarimadu, Hanif Faisol bersama jajaran menutup Tempat Pemrosesan Akhir (TPA) liar. Langkah ini diambil untuk memastikan pengelolaan sampah yang lebih baik.
-                        </p>
-                        <a href="https://www.liputan6.com/news/read/5802367/kunker-ke-riau-menteri-hanif-faisol-tutup-tpa-liar-di-kampar" class="btn btn-success" target="_blank">Selengkapnya</a>
-                    </div>
-                </div>
-              </div>
-      
-
-              <div class="col-md-4">
-                  <div class="card">
-                      <img src="https://www.batamnews.co.id/foto_berita/2023/11/2023-11-19-tumpukan-sampah-menumpuk-di-kota-pekanbaru-ini-respon-dlhk.jpg" class="card-img-top" alt="Tumpukan Sampah Muncul di Pekanbaru Akibat Lambat Diangkut">
-                      <div class="card-body">
-                          <h5 class="card-title">Tumpukan Sampah Muncul di Pekanbaru Akibat Lambat Diangkut</h5>
-                          <p class="card-text">
-                              Tumpukan sampah di Pekanbaru terus menjadi masalah, terutama di Jalan Rajawali dan Jalan SM Amin. Warga mengeluhkan lambatnya pengangkutan sampah yang menyebabkan pemandangan buruk...
-                          </p>
-                          <a href="https://www.detik.com/sumut/berita/d-6447366/tumpukan-sampah-muncul-di-pekanbaru-akibat-lambat-diangkut" class="btn btn-success" target="_blank">Selengkapnya</a>
-                      </div>
-                  </div>
-              </div>
-
-    
-              <div class="col-md-4">
-                  <div class="card">
-                      <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/225/2024/01/04/17-sampah-jalan-634933496.jpg" class="card-img-top" alt="Sampah Nyaris Tutupi Badan Jalan di Pekanbaru">
-                      <div class="card-body">
-                          <h5 class="card-title">Sampah Nyaris Tutupi Badan Jalan di Pekanbaru</h5>
-                          <p class="card-text">
-                              Kota Pekanbaru menghadapi masalah tumpukan sampah yang semakin parah di awal tahun 2024. Salah satu lokasi yang paling terdampak adalah Jalan Agus Salim, di mana tumpukan sampah mencapai 25 meter...
-                          </p>
-                          <a href="https://riaupos.jawapos.com/riau/2253695528/sampah-nyaris-tutupi-badan-jalan" class="btn btn-success" target="_blank">Selengkapnya</a>
-                      </div>
-                  </div>
-              </div>
-
-
-              <div class="col-md-4">
-                <div class="card">
-                    <img src="https://www.pekanbaru.go.id/berkas_file/news/10092024/79917-news-dlhk-pekanbaru-ingat.jpg" class="card-img-top" alt="Sampah Nyaris Tutupi Badan Jalan di Pekanbaru">
-                    <div class="card-body">
-                        <h5 class="card-title">DLHK Pekanbaru Ingatkan Warga Buang Sampah Sesuai Jadwal</h5>
-                        <p class="card-text">
-                            Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru imbau warga Kota Pekanbaru jangan sampai membuang sampah sembarangan. Mereka harus membuang sampah sesuai jadwal yang ada.
-                        </p>
-                        <a href="https://www.pekanbaru.go.id/p/news/dlhk-pekanbaru-ingatkan-warga-buang-sampah-sesuai-jadwal" class="btn btn-success" target="_blank">Selengkapnya</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-          <!-- Tombol Berita Lainnya -->
-          <div class="row mt-5">
-              <div class="col-12 text-center">
-                  <a href="berita.html" class="btn btn-success">Berita Lainnya</a>
-              </div>
-          </div>
-      </div>
-
-      <style>
-        .card {
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            min-height: 45vh;
-              }
-
-              .card-img-top {
-                  object-fit: cover;
-                  height: 20vh;
-              }
-
-              .card-body {
-                  padding: 20px;
-              }
-
-              .card-title {
-                  font-size: 18px;
-                  font-weight: bold;
-              }
-
-              .card-text {
-                  font-size: 14px;
-                  color: #555;
-        }
-
-      </style>
-
-    </section>
-
-    <section class="faq-9 faq section " id="faq">
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-5">
-            <h2 class="faq-title">Punya Pertanyaan? Cek FAQ</h2>
-            <p class="faq-description">Berikut adalah beberapa pertanyaan yang sering diajukan terkait sistem PANTAS.</p>
-            <div class="faq-arrow d-none d-lg-block" data-aos-delay="200">
-              <img src="assets/img/tanya.jpg" alt="arrow icon" width="400" height="396">
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos-delay="300">
-            <div class="faq-container">
-
-              <!-- FAQ Item 1 -->
-              <div class="faq-item" style="background-color: #F4F6FF;">
-                <h3>Bagaimana cara mengakses sistem PANTAS?</h3>
-                <div class="faq-content">
-                  <p>Pengguna dapat mengakses sistem PANTAS melalui web browser di perangkat apapun. Tidak diperlukan registrasi untuk mulai melaporkan sampah.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <!-- FAQ Item 2 -->
-              <div class="faq-item" style="background-color: #F4F6FF;">
-                <h3>Apakah saya perlu mendaftar untuk menggunakan sistem PANTAS?</h3>
-                <div class="faq-content">
-                  <p>Untuk melaporkan sampah, Anda tidak perlu melakukan registrasi. Cukup buka sistem di web browser dan mulai melaporkan dengan GPS dan foto sampah.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <!-- FAQ Item 3 -->
-              <div class="faq-item" style="background-color: #F4F6FF;">
-                <h3>Bagaimana cara melaporkan sampah dengan sistem PANTAS?</h3>
-                <div class="faq-content">
-                  <p>Setelah mengakses sistem, aktifkan lokasi perangkat Anda, isi form laporan dengan memilih jenis sampah, tingkat keparahan, serta mengunggah foto sampah, lalu kirimkan laporan.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <!-- FAQ Item 4 -->
-              <div class="faq-item" style="background-color: #F4F6FF;">
-                <h3>Bagaimana sistem menentukan lokasi sampah?</h3>
-                <div class="faq-content">
-                  <p>Sistem menggunakan GPS di perangkat Anda untuk menentukan lokasi secara otomatis dan menandainya pada peta sebagai titik laporan sampah.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <!-- FAQ Item 5 -->
-              <div class="faq-item" style="background-color: #F4F6FF;">
-                <h3>Apakah laporan saya akan diproses dengan cepat?</h3>
-                <div class="faq-content">
-                  <p>Ya, laporan yang masuk akan segera diteruskan ke pihak yang berwenang seperti DLHK Riau untuk penanganan lebih lanjut, memastikan respons cepat terhadap sampah liar.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <!-- FAQ Item 6 -->
-              <div class="faq-item" style="background-color: #F4F6FF;">
-                <h3>Apakah saya bisa melaporkan sampah di lokasi yang tidak terlihat?</h3>
-                <div class="faq-content">
-                  <p>Anda bisa melaporkan sampah di lokasi mana saja menggunakan GPS di perangkat Anda, selama lokasi tersebut dapat dijangkau oleh ponsel dan sinyal GPS tersedia.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <!-- FAQ Item 7 -->
-              <div class="faq-item" style="background-color: #F4F6FF;">
-                <h3>Bagaimana cara saya mengetahui status laporan saya?</h3>
-                <div class="faq-content">
-                  <p>Setelah mengirimkan laporan, Anda dapat mengisi nomor Whatsapp untuk mendapatkan informasi status laporan melalui pesan langsung.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-            </div>
-          </div>
-
+      <section id="berita" class="testimonials section light-background" data-aos-delay="10">
+        <div class="container section-title">
+            <h2>Berita Sampah Liar di Provinsi Riau</h2>
+            <p>Berikut adalah beberapa berita terkini mengenai masalah tumpukan sampah liar di Provinsi Riau.</p>
         </div>
-      </div>
-    </section>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4" data-aos-delay="10">
+                    <div class="card">
+                        <img src="https://awsimages.detik.net.id/community/media/visual/2024/01/03/tumpukan-sampah-di-pinggir-jalan-di-pekanbaru-raja-adil-siregardetiksumut_169.jpeg?w=700&q=90" class="card-img-top" alt="Tumpukan Sampah di Pekanbaru yang Mengganggu Pejalan Kaki">
+                        <div class="card-body">
+                            <h5 class="card-title">Tumpukan Sampah di Pekanbaru yang Mengganggu Pejalan Kaki</h5>
+                            <p class="card-text">
+                                Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru menjelaskan penyebab tumpukan sampah yang tak diangkut adalah aksi demo karyawan di tempat pembuangan akhir (TPA)...
+                            </p>
+                            <a href="https://www.detik.com/sumut/berita/d-7125443/ternyata-ini-penyebab-tumpukan-sampah-di-pekanbaru-tak-diangkut" class="btn btn-success" target="_blank">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos-delay="10">
+                    <div class="card">
+                        <img src="https://www.cakaplah.com/assets/news/04102019/cakaplah_m9zqq_43980.jpg" class="card-img-top" alt="Produksi Sampah Warga Pekanbaru Tembus 1.000 Ton Perhari">
+                        <div class="card-body">
+                            <h5 class="card-title">Produksi Sampah Warga Pekanbaru Tembus 1.000 Ton Perhari</h5>
+                            <p class="card-text">
+                              Produksi sampah di Kota Pekanbaru setiap hari mencapai 1.000 ton. 800 ton diantaranya dibuang langsung ke Tempat Pembuangan Akhir (TPA) Muara Fajar.Sekretaris Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru..
+                            </p>
+                            <a href="https://www.cakaplah.com/berita/baca/43980/2019/10/04/produksi-sampah-warga-pekanbaru-tembus-1000-ton-perhari#sthash.YLKaCrQ6.dpbs" class="btn btn-success" target="_blank">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos-delay="10">
+                  <div class="card">
+                      <img src="https://asset-2.tstatic.net/tribunnews/foto/bank/images/LH123.jpg" class="card-img-top" alt="Kunker ke Riau, Menteri Hanif Faisol Tutup TPA Liar di Kampar">
+                      <div class="card-body">
+                          <h5 class="card-title">Kunker ke Riau, Menteri Hanif Faisol Tutup TPA Liar di Kampar</h5>
+                          <p class="card-text">
+                            Pada hari pertama kunjungannya di Buni Sarimadu, Hanif Faisol bersama jajaran menutup Tempat Pemrosesan Akhir (TPA) liar. Langkah ini diambil untuk memastikan pengelolaan sampah yang lebih baik.
+                          </p>
+                          <a href="https://www.liputan6.com/news/read/5802367/kunker-ke-riau-menteri-hanif-faisol-tutup-tpa-liar-di-kampar" class="btn btn-success" target="_blank">Selengkapnya</a>
+                      </div>
+                  </div>
+                </div>
+        
+
+                <div class="col-md-4" data-aos-delay="10">
+                    <div class="card">
+                        <img src="https://www.batamnews.co.id/foto_berita/2023/11/2023-11-19-tumpukan-sampah-menumpuk-di-kota-pekanbaru-ini-respon-dlhk.jpg" class="card-img-top" alt="Tumpukan Sampah Muncul di Pekanbaru Akibat Lambat Diangkut">
+                        <div class="card-body">
+                            <h5 class="card-title">Tumpukan Sampah Muncul di Pekanbaru Akibat Lambat Diangkut</h5>
+                            <p class="card-text">
+                                Tumpukan sampah di Pekanbaru terus menjadi masalah, terutama di Jalan Rajawali dan Jalan SM Amin. Warga mengeluhkan lambatnya pengangkutan sampah yang menyebabkan pemandangan buruk...
+                            </p>
+                            <a href="https://www.detik.com/sumut/berita/d-6447366/tumpukan-sampah-muncul-di-pekanbaru-akibat-lambat-diangkut" class="btn btn-success" target="_blank">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+      
+                <div class="col-md-4" data-aos-delay="10">
+                    <div class="card">
+                        <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/225/2024/01/04/17-sampah-jalan-634933496.jpg" class="card-img-top" alt="Sampah Nyaris Tutupi Badan Jalan di Pekanbaru">
+                        <div class="card-body">
+                            <h5 class="card-title">Sampah Nyaris Tutupi Badan Jalan di Pekanbaru</h5>
+                            <p class="card-text">
+                                Kota Pekanbaru menghadapi masalah tumpukan sampah yang semakin parah di awal tahun 2024. Salah satu lokasi yang paling terdampak adalah Jalan Agus Salim, di mana tumpukan sampah mencapai 25 meter...
+                            </p>
+                            <a href="https://riaupos.jawapos.com/riau/2253695528/sampah-nyaris-tutupi-badan-jalan" class="btn btn-success" target="_blank">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4" data-aos-delay="10">
+                  <div class="card">
+                      <img src="https://www.pekanbaru.go.id/berkas_file/news/10092024/79917-news-dlhk-pekanbaru-ingat.jpg" class="card-img-top" alt="Sampah Nyaris Tutupi Badan Jalan di Pekanbaru">
+                      <div class="card-body">
+                          <h5 class="card-title">DLHK Pekanbaru Ingatkan Warga Buang Sampah Sesuai Jadwal</h5>
+                          <p class="card-text">
+                              Dinas Lingkungan Hidup dan Kebersihan (DLHK) Kota Pekanbaru imbau warga Kota Pekanbaru jangan sampai membuang sampah sembarangan. Mereka harus membuang sampah sesuai jadwal yang ada.
+                          </p>
+                          <a href="https://www.pekanbaru.go.id/p/news/dlhk-pekanbaru-ingatkan-warga-buang-sampah-sesuai-jadwal" class="btn btn-success" target="_blank">Selengkapnya</a>
+                      </div>
+                  </div>
+                </div>
+
+
+
+            <!-- Tombol Berita Lainnya -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="berita.html" class="btn btn-success">Berita Lainnya</a>
+                </div>
+            </div>
+        </div>
+
+        <style>
+          .card {
+              border-radius: 10px;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              min-height: 45vh;
+                }
+
+                .card-img-top {
+                    object-fit: cover;
+                    height: 20vh;
+                }
+
+                .card-body {
+                    padding: 20px;
+                }
+
+                .card-title {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .card-text {
+                    font-size: 14px;
+                    color: #555;
+          }
+
+        </style>
+      </section>
+
+      <section class="faq-9 faq section " id="faq">
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-5">
+              <h2 class="faq-title">Punya Pertanyaan? Cek FAQ</h2>
+              <p class="faq-description">Berikut adalah beberapa pertanyaan yang sering diajukan terkait sistem PANTAS.</p>
+              <div class="faq-arrow d-none d-lg-block" data-aos-delay="200">
+                <img src="assets/img/tannya.png" alt="arrow icon" width="400" height="396">
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos-delay="300">
+              <div class="faq-container">
+
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" data-aos-delay="100" style="background-color: #F4F6FF;">
+                  <h3>Bagaimana cara mengakses sistem PANTAS?</h3>
+                  <div class="faq-content">
+                    <p>Pengguna dapat mengakses sistem PANTAS melalui web browser di perangkat apapun. Tidak diperlukan registrasi untuk mulai melaporkan sampah.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" data-aos-delay="100" style="background-color: #F4F6FF;">
+                  <h3>Apakah saya perlu mendaftar untuk menggunakan sistem PANTAS?</h3>
+                  <div class="faq-content">
+                    <p>Untuk melaporkan sampah, Anda tidak perlu melakukan registrasi. Cukup buka sistem di web browser dan mulai melaporkan dengan GPS dan foto sampah.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" data-aos-delay="100" style="background-color: #F4F6FF;">
+                  <h3>Bagaimana cara melaporkan sampah dengan sistem PANTAS?</h3>
+                  <div class="faq-content">
+                    <p>Setelah mengakses sistem, aktifkan lokasi perangkat Anda, isi form laporan dengan memilih jenis sampah, tingkat keparahan, serta mengunggah foto sampah, lalu kirimkan laporan.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" data-aos-delay="100" style="background-color: #F4F6FF;">
+                  <h3>Bagaimana sistem menentukan lokasi sampah?</h3>
+                  <div class="faq-content">
+                    <p>Sistem menggunakan GPS di perangkat Anda untuk menentukan lokasi secara otomatis dan menandainya pada peta sebagai titik laporan sampah.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" data-aos-delay="100" style="background-color: #F4F6FF;">
+                  <h3>Apakah laporan saya akan diproses dengan cepat?</h3>
+                  <div class="faq-content">
+                    <p>Ya, laporan yang masuk akan segera diteruskan ke pihak yang berwenang seperti DLHK Riau untuk penanganan lebih lanjut, memastikan respons cepat terhadap sampah liar.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item" data-aos-delay="100" style="background-color: #F4F6FF;">
+                  <h3>Apakah saya bisa melaporkan sampah di lokasi yang tidak terlihat?</h3>
+                  <div class="faq-content">
+                    <p>Anda bisa melaporkan sampah di lokasi mana saja menggunakan GPS di perangkat Anda, selama lokasi tersebut dapat dijangkau oleh ponsel dan sinyal GPS tersedia.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item" data-aos-delay="100" style="background-color: #F4F6FF;">
+                  <h3>Bagaimana cara saya mengetahui status laporan saya?</h3>
+                  <div class="faq-content">
+                    <p>Setelah mengirimkan laporan, Anda dapat mengisi nomor Whatsapp untuk mendapatkan informasi status laporan melalui pesan langsung.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
 
   </main>
 
@@ -878,15 +865,12 @@
       <p>© <strong class="px-1 sitename">DLHK Provinsi Riau</strong> All Rights Reserved</p>
     </div>
   </footer>
-  
-
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
