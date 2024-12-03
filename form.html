@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tabel Laporan- DLHK Provinsi Riau</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="starter-page-page">
+
+
+    
+  <header id="header" class="header d-flex align-items-center fixed-top">
+
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Beranda</a></li>
+          <li><a href="index.html#about">Tentang</a></li>
+          <li><a href="index.html#fitur">Fitur</a></li>
+          <li><a href="index.html#services">Layanan</a></li>
+          <li><a href="index.html#faq">Pertanyaan</a></li>               
+          <li class="dropdown"><a href="#"><span></span>Laporan<i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="form.html">Form Laporan</a></li>
+              <li><a href="tabeldata.html">Tabel Laporan</a></li>
+              <li><a href="peta.html">Peta Laporan</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html">
+        <i class="fas fa-arrow-left"></i> Kembali
+      </a>
+      
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Halaman Pelaporan</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Pelaporan</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="laporkan" class="contact section ">
+        <!-- Section Title -->
+        <div class="container section-title">
+            <h2>Ayo Laporkan Tumpukan Sampah di sekitar Anda</h2>
+            <p>Silahkan isi form laporan berikut ini dengan tepat dan apa Adanya.Kontribusi anda sangat berarti bagi kita semua demi menciptakan lingkungan yang bersih bebas sampah.</p>
+        </div><!-- End Section Title -->
+    
+        <div class="container" data-aos-delay="100">
+            <div class="row g-4 g-lg-5">
+                <!-- Map Section -->
+                <div class="col-lg-6">
+                    <div id="map" style="width: 100%; min-height: 80vh; border-radius: 10px;"></div>
+                </div>
+    
+                <!-- Form Section -->
+                <div class="col-lg-6">
+                    <div class="contact-form" data-aos-delay="100" data-aos-delay="300">
+
+                        <form action="{{ route('lapor') }}" method="POST" enctype="multipart/form-data" class="php-email-form">
+                            <input type="hidden" name="koordinat" id="koordinat">
+    
+                            <div class="form-group mb-3" data-aos-delay="100">
+                                <label for="form-name" class="form-label fw-bold">Nama:</label>
+                                <input type="text" class="form-control" id="form-name" name="name" required>
+                            </div>
+    
+                            <div class="form-group mb-3" data-aos-delay="100">
+                                <label for="form-wa" class="form-label fw-bold">WhatsApp:</label>
+                                <input type="number" class="form-control" id="wa" name="wa" onkeyup="validateWA()" required>
+                                <label id="wa-error" class="text-info mt-1" style="display: none"></label>
+                            </div>
+    
+                            <div class="form-group mb-3" data-aos-delay="100">
+                                <label for="form-kategori" class="form-label fw-bold">Kategori Tumpukan:</label>
+                                <select class="form-control" id="form-kategori" name="kategori" required>
+                                    <option value="" hidden>Pilih kategori</option>
+                                    <option value="Ringan">Ringan</option>
+                                    <option value="Sedang">Sedang</option>
+                                    <option value="Berat">Berat</option>
+                                </select>
+                            </div>
+    
+                            <div class="form-group mb-3" data-aos-delay="100">
+                                <label for="form-deskripsi" class="form-label fw-bold">Deskripsi:</label>
+                                <textarea class="form-control" id="form-deskripsi" name="deskripsi" rows="4" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="form-foto" class="form-label">Foto:</label>
+                              <input class="form-control" type="file" id="form-foto" name="foto" accept="image/*" required>
+                            </div>
+    
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary px-5 py-2" style="border-radius: 10px;">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+          <!-- Leaflet.js Library -->
+          <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+          <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+          
+          <script>
+              // Initialize the map
+              var map = L.map('map').setView([-6.1754, 106.8272], 13); // Center the map to Jakarta (Example)
+          
+              // Add OpenStreetMap tiles
+              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 18,
+                  attribution: '© OpenStreetMap contributors'
+              }).addTo(map);
+          
+              // Add marker
+              var marker = L.marker([-6.1754, 106.8272]).addTo(map);
+          
+              // Update hidden input when the map is clicked
+              map.on('click', function (e) {
+                  var latlng = e.latlng;
+                  marker.setLatLng(latlng); // Move marker to new location
+                  document.getElementById('koordinat').value = latlng.lat + ',' + latlng.lng; // Update hidden input
+              });
+          </script>
+          
+
+          
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <!-- Copyright Section -->
+    <div class="container copyright text-center mt-4">
+      <div class="footer-contact pt-3">
+        <h4 style="margin-bottom: -1vh;">Dinas Lingkunagn Hidup dan Kehutanan Provinsi Riau</h4>
+        <p>GC7W+3W5, JL. Jend. Sudirman, No. 468, Pekanbaru, 28126, Jadirejo, Sukajadi, Pekanbaru City, Riau 28121</p>
+        <p><strong>Phone:</strong> <span>(0761) 21440</span></p>
+        <p><strong>Hours:</strong> <span>Closed ⋅ Opens Monday at 07:30</span></p>
+        <p><strong>Province:</strong> <span>Riau</span></p>
+      </div>
+      <p>© <strong class="px-1 sitename">DLHK Provinsi Riau</strong> All Rights Reserved</p>
+    </div>
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
